@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 30% 70%;
+      grid-template-rows: 30% 70%;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+.breed {
+  background-color: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+.slideshow {
+  border-top: 3px solid white;
+  background: url("https://cdn.pixabay.com/photo/2015/12/03/08/50/paper-1074131_960_720.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.title {
+  padding: 0.5rem;
+  border: 2px solid white;
+  margin: 0.5rem;
+  text-shadow: 1px 1px black;
+  -webkit-box-shadow: 2px 2px black;
+          box-shadow: 2px 2px black;
+  border-radius: 3px;
+}
+
+.image-container {
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+img {
+  height: 100%;
+  border: 5px solid white;
+  width: 100%;
+  -webkit-animation: appear 0.7s linear;
+          animation: appear 0.7s linear;
+  border-radius: 5px;
+}
+
+@-webkit-keyframes appear {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.93);
+            transform: scale(0.93);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.93);
+            transform: scale(0.93);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+select {
+  padding: 0.5rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px black;
+          box-shadow: 2px 2px black;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 1024px) {
+  .title {
+    font-size: 3rem;
+  }
+  select {
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=index.css.map */
