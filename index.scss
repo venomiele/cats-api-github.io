@@ -10,7 +10,7 @@
 body {
     height: 100vh;
     width: 100%;
-
+overflow-x: hidden;
 }
 
 .container {
@@ -91,5 +91,11 @@ select {
     }
     select {
         font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .image-container {
+        width: 100%;
     }
 }
