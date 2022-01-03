@@ -91,10 +91,24 @@ select {
     select {
         font-size: 2rem;
     }
+    img {
+        height: 100%;
+        border: 5px solid white;
+        width: 90%;
+        animation: appear 0.7s linear;
+        border-radius: 5px;
+    }
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 1023px) {
     .image-container {
         width: 100%;
+    }
+    img {
+        height: 100%;
+        border: 5px solid white;
+        width: 100%;
+        animation: appear 0.7s linear;
+        border-radius: 5px;
     }
 }
